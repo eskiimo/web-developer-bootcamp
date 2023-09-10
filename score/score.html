@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Score</title>
+    <style>
+    body{
+        height: 100%;
+    }
+    h1{
+        font-size:70px;
+        text-align: center;
+    }
+    form{
+        display: block;
+        text-align: center;
+    }
+    span{
+        width:30px;
+        margin-left: 50px;
+        margin-right: 50px;
+        font-size:50px;
+        text-align: center;
+    }
+    button{
+        display: block;
+        width:60%;
+        height: 50px;
+        margin: 20px auto;
+    }
+    .goal{
+        margin-left: 10px;
+    }
+    .container{
+        margin: auto;
+        width: 70%;
+        height: 100%;
+        background-color: brown;
+    }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1> <span> 0 </span> to <span>0</span> </h1>
+
+        <span>playing to :</span>
+        <span class="goal"> 0 </span>
+        
+        <form onsubmit="return false;" >
+            <input id="limit"  required="required" type="text" placeholder="الفوره من كام ؟">
+            <input type="submit" id="submit"  >
+            <button id="p1" > player 1</button>
+            <button id="p2"> player 2</button>
+            <button id="reset"> reset</button>
+        </form>
+    </div>
+    
+        
+
+    <script src="./score.js"></script>
+</body>
+</html>
